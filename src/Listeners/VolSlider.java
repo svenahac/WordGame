@@ -8,6 +8,7 @@ import static Screens.SettingsScreen.volSlider;
 import static Sound.Music.control;
 
 public class VolSlider implements ChangeListener {
+    // Setting the volume
     @Override
     public void stateChanged(ChangeEvent e) {
         volLabel.setText("Value: " + volSlider.getValue() + "%");

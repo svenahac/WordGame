@@ -18,7 +18,8 @@ public class EndListener implements ActionListener {
         gameScreen.dispose();
 
         String data = "1";
-        // Koda sposojena iz https://www.w3schools.com/java/java_files_read.asp
+        
+        // Sets the highscore if it was beaten
         try {
             File myObj = new File("src/Content/highscore.txt");
             Scanner myReader = new Scanner(myObj);
@@ -39,7 +40,7 @@ public class EndListener implements ActionListener {
 
         String newData = String.valueOf(highscore);
 
-        // Koda sposojena iz https://www.w3schools.com/java/java_files_create.asp
+        
         try {
             FileWriter myWriter = new FileWriter("src/Content/highscore.txt");
             myWriter.write(newData);

@@ -8,7 +8,7 @@ import static Screens.GameScreen.*;
 public class Rules {
 
     public static void availableMoves(int i, int j, JButton[][] buttons){
-
+        // Logic for the available moves
 
         if (i == 0 && j == 0) { // Top left corner
 
