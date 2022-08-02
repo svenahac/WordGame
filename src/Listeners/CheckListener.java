@@ -12,6 +12,7 @@ import static Screens.GameScreen.*;
 import static Screens.GameScreen.buttons;
 
 public class CheckListener implements ActionListener {
+    // Checks if the word is in the dictionary
     @Override
     public void actionPerformed(ActionEvent e) {
         String checkedWord = word.getText();
